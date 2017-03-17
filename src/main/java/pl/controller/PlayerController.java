@@ -44,7 +44,7 @@ public class PlayerController implements Serializable {
     }
 
     public String deleteRow(Player playerToDelete) {
-        logger.info(this.getClass().getSimpleName() +  "@@@ Trying to remove pllayer:" + playerToDelete.getFirstName());
+        logger.info(this.getClass().getSimpleName() +  "@@@ Trying to remove player:" + playerToDelete.getFirstName());
         service.deleteFromDB(playerToDelete);
         return null;
     }
